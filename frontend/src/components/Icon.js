@@ -1,0 +1,12 @@
+import img1 from '../assets/Frame 1.jpg'
+import icon1 from '../assets/Polygon 1.svg'
+import icon1_1 from '../assets/user.svg'
+import icon2 from '../assets/Polygon 2.svg'
+import icon2_1 from'../assets/briefcase.svg'
+import arrow from '../assets/arrow-right.svg'
+import arrow2 from '../assets/arrow_back_ios_24px.jpg'
+import lock from '../assets/lock.svg'
+import green from '../assets/circle check full.svg'
+import red from '../assets/red-x-line-icon.svg'
+import google from '../assets/flat-color-icons_google.svg'
+export {img1,icon1, icon1_1, icon2, icon2_1, arrow ,arrow2,lock,green,red,google};

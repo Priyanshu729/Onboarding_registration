@@ -13,12 +13,12 @@ const app=express();
 app.use(cors());
 app.use(express.json());
 
-if(process.env.NODE_ENV === "production")
-app.use(express.static(path.join(__dirname, '/frontend/build')));
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static('frontend/build'));
 
-app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname,'frontend','build', 'index.html'));
-});
+    app.get('*',(req,res)=>res.sendFile(path.resolve(__dirname,'frontend','build','index.html')));
+}
+
 app.use("/api/v1/users",userRoutes);
 
 app.get('/',(req,res)=>{
